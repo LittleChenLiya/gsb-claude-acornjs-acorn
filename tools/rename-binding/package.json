@@ -1,0 +1,16 @@
+{
+  "name": "acorn-rename-binding",
+  "private": true,
+  "type": "module",
+  "description": "Explicit lexical binding renamer built on Acorn (local tool, not published)",
+  "main": "index.js",
+  "bin": {
+    "acorn-rename-binding": "cli.js"
+  },
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "node --test test/rename.test.js"
+  }
+}
