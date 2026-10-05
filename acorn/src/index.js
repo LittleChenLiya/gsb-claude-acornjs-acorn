@@ -97,3 +97,8 @@ export function parseExpressionAt(input, pos, options) {
 export function tokenizer(input, options) {
   return Parser.tokenizer(input, options)
 }
+
+// Explicit "use strict" directive insertion planner. Scans a script for
+// scopes that are not yet strict and plans the insertion of an explicit
+// directive. Modules and classes are already strict and are skipped.
+export {insertStrictDirectives} from "./strict-directive.js"

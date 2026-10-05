@@ -8,6 +8,7 @@
   require("./tests-trailing-commas-in-func.js");
   require("./tests-template-literal-revision.js");
   require("./tests-directive.js");
+  require("./tests-strict-directive.js");
   require("./tests-rest-spread-properties.js");
   require("./tests-async-iteration.js");
   require("./tests-regexp.js");
