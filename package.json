@@ -20,6 +20,9 @@
     "url": "https://github.com/acornjs/acorn.git"
   },
   "license": "MIT",
+  "bin": {
+    "freevars": "freevars/bin/freevars.js"
+  },
   "scripts": {
     "build": "npm run build:main && npm run build:walk && npm run build:loose",
     "build:loose": "rollup -c acorn-loose/rollup.config.mjs",

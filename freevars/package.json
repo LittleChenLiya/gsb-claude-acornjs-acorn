@@ -1,0 +1,11 @@
+{
+  "name": "acorn-free-vars",
+  "version": "1.0.0",
+  "description": "Free variable analysis built on Acorn, resolving bindings by function, parameter, block and catch scopes",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "freevars": "bin/freevars.js"
+  },
+  "license": "MIT"
+}
