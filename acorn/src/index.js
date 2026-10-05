@@ -28,6 +28,7 @@ import {TokContext, types as tokContexts} from "./tokencontext.js"
 import {isIdentifierChar, isIdentifierStart} from "./identifier.js"
 import {Token} from "./tokenize.js"
 import {isNewLine, lineBreak, lineBreakG, nonASCIIwhitespace} from "./whitespace.js"
+import {rename, RenameError} from "./rename.js"
 
 export const version = "8.18.0"
 export {
@@ -48,7 +49,9 @@ export {
   isNewLine,
   lineBreak,
   lineBreakG,
-  nonASCIIwhitespace
+  nonASCIIwhitespace,
+  rename,
+  RenameError
 }
 
 Parser.acorn = {
