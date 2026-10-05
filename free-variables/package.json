@@ -1,0 +1,20 @@
+{
+  "name": "acorn-free-variables",
+  "version": "1.0.0",
+  "description": "Acorn-based free-variable analysis with real function/parameter/block/catch scopes",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "free-variables": "bin/fv.js"
+  },
+  "scripts": {
+    "test": "node test/run.js",
+    "example": "node bin/fv.js --summary examples/four-scopes.js",
+    "example:unknown": "node bin/fv.js --summary examples/unknown.js"
+  },
+  "license": "MIT",
+  "private": true
+}
